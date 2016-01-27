@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  萝卜周末
+//
+//  Created by Apple_16 on 16/1/18.
+//  Copyright (c) 2016年 com.mall. All rights reserved.
+//
+
+#ifndef _____PrefixHeader_pch
+#define _____PrefixHeader_pch
+#import "UIView+LBExtension.h"
+#import "NSMutableAttributedString+LBUnderlineString.h"
+#import "NSDate+LBExtension.h"
+#import "NSString+LBExtension.h"
+#ifdef DEBUG//处于开发阶段
+#define LBLog(...)NSLog(__VA_ARGS__)
+#else//处于发布阶段
+#define LBLog(...)
+#endif
+
+//#define LBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//#define LBColorAlpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+//// 随机色
+//#define LBRandomColor LBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+//
+////屏幕大小
+//#define LBKeyWindow                 [[UIApplication sharedApplication] keyWindow]
+//#define LBScreenWidth               [UIScreen mainScreen].bounds.size.width
+//#define LBScreenHeight              [UIScreen mainScreen].bounds.size.height
+//#define LBScreenBounds              [[UIScreen mainScreen] bounds]
+//#define LBApplicationFrame          [[UIScreen mainScreen] applicationFrame]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Macro.h"
+#import "NSString+Extension.h"
+
+#endif
